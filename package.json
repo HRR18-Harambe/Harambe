@@ -11,7 +11,7 @@
   },
   "scripts": {
     "start": "node ./server/server.js",
-    "test": "mocha ./spec/serverTests.js"
+    "test": "eslint . | mocha ./spec/serverTests.js"
   },
   "engines": {
     "node": "^6.6.0"
@@ -39,5 +39,12 @@
       "es2015",
       "react"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^3.5.0",
+    "eslint-config-airbnb": "^11.1.0",
+    "eslint-plugin-import": "^1.15.0",
+    "eslint-plugin-jsx-a11y": "^2.2.2",
+    "eslint-plugin-react": "^6.3.0"
   }
 }
