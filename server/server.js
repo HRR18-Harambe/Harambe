@@ -16,16 +16,22 @@ const defaultPort = require('./config').DEFAULT_PORT;
 
 const port = process.env.PORT || defaultPort;
 
+// Stormpath environment variables
+const id = process.env.STORMPATH_CLIENT_APIKEY_ID || stormpathConfig.STORMPATH_CLIENT_APIKEY_ID;
+const secret = process.env.STORMPATH_CLIENT_APIKEY_SECRET
+  || stormpathConfig.STORMPATH_CLIENT_APIKEY_SECRET;
+const href = process.env.STORMPATH_APPLICATION_HREF || stormpathConfig.STORMPATH_APPLICATION_HREF;
+
 app.set('port', port);
 
 // Stormpath init
 app.use(stormpath.init(app, {
   apiKey: {
-    id: stormpathConfig.STORMPATH_CLIENT_APIKEY_ID,
-    secret: stormpathConfig.STORMPATH_CLIENT_APIKEY_SECRET,
+    id,
+    secret,
   },
   application: {
-    href: stormpathConfig.STORMPATH_APPLICATION_HREF,
+    href,
   },
   website: true, // create /register /login & /logout routes
 }));

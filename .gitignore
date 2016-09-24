@@ -39,4 +39,5 @@ azure.err
 iisnode.yml
 .Spotlight-V100
 .Trashes
+server/localConfig.js
 server/config.js
