@@ -2,24 +2,10 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore } from 'redux';
+import App from '../reducers/settingsButtonReducer.js';
+import { connect } from 'react-redux'
 
-// Reducer
-const App = (currentState = [{ displaySettings: false }], action) => {
-  switch (action.type) {
-    case 'TOGGLE_SETTINGS':
-      return [
-        {
-          displaySettings: !currentState[0].displaySettings,
-        },
-      ];
-
-    default:
-      return currentState;
-  }
-};
-
-const store = createStore(App);
+//will not work because store has not been created or imported anywhere
 
 const SettingsButton = () => (
 
@@ -33,12 +19,11 @@ const SettingsButton = () => (
 
 );
 
-export default SettingsButton;
 
-store.subscribe(() => {
-  const currentState = store.getState();
-  console.log(currentState[0].displaySettings);
-  if (currentState[0].displaySettings === true) {
-    ReactDOM.render(<div>Settings!!!1</div>, document.getElementById('settings'));
-  }
-});
+// store.subscribe(() => {
+//   const currentState = store.getState();
+//   if (currentState[0].displaySettings === true) {
+//     ReactDOM.render(<div>Settings!!!1</div>, document.getElementById('settings'));
+//   } else {
+//     ReactDOM.render(<div></div>, document.getElementById('settings'));
+//   }
