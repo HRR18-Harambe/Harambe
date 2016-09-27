@@ -1,12 +1,15 @@
-import React from 'react';
 import ButtonList from './ButtonList.jsx';
 import RSSFeedList from './RSSFeedList.jsx';
 import NotificationList from './NotificationList.jsx';
 import SearchBar from './SearchBar.jsx';
 import SettingsButton from './SettingsButton.jsx';
+
 import settingsButtonReducer from '../reducers/settingsButtonReducer';
+
+import React from 'react';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
+import ReactDOM, { render } from 'react-dom';
 
 const App = () =>
   (
@@ -21,11 +24,11 @@ const App = () =>
   </div>
 );
 
-import ReactDOM, { render } from 'react-dom'; //eslint-disable-line
-// import { render } from 'react-dom';
+let store = createStore(settingsButtonReducer)
 
 ReactDOM.render(
-<Provider store = {createStore(settingsButtonReducer)}>
-  <App />
-</Provider>,
-document.getElementById('app')); //eslint-disable-line
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('app')
+);

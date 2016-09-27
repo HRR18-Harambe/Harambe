@@ -1,23 +1,46 @@
 /* eslint-env browser*/
 
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import App from '../reducers/settingsButtonReducer.js';
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
 
-//will not work because store has not been created or imported anywhere
 
-const SettingsButton = () => (
+class SettingsButton extends Component {
 
-  <div className="settingsButton">
-    <button
-      onClick={() => store.dispatch({
-        type: 'TOGGLE_SETTINGS',
-      })}
-    >Settings</button>
-  </div>
+  constructor(props){
+    super(props);
+    console.log(this.state)
+  }
 
-);
+  render(){
+    return (
+      <div className="settingsButton">
+        <button
+          onClick={() => store.dispatch({
+            type: 'TOGGLE_SETTINGS',
+          })}
+        >Settings</button>
+      </div>
+    )
+  }
+}
+
+export default SettingsButton;
+
+// const SettingsButton = () => (
+
+//   //const { store } = this.context;
+
+//   <div className="settingsButton">
+//     <button
+//       onClick={() => store.dispatch({
+//         type: 'TOGGLE_SETTINGS',
+//       })}
+//     >Settings</button>
+//   </div>
+
+// );
 
 
 // store.subscribe(() => {
