@@ -1,5 +1,3 @@
-
-
 const settingsButtonReducer = (currentState = [{ displaySettings: false }], action) => {
   switch (action.type) {
     case 'TOGGLE_SETTINGS':

@@ -24,7 +24,7 @@ const App = () =>
   </div>
 );
 
-let store = createStore(settingsButtonReducer)
+let store = createStore(settingsButtonReducer);
 
 ReactDOM.render(
   <Provider store={store}>
