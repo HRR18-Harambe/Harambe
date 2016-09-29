@@ -3,12 +3,13 @@ import { setVisibilityFilter } from '../actions';
 import SettingDisp from '../components/SettingDisp';
 
 // this is not passing off the state to SettingDisp
-const mapStateToProps = (state, active) => ({
-  active: state[0].displaySetting,
-})
+const mapStateToProps = (state) => ({
+  active: state.toggle,
+  test: state.todos,
+});
 
-const SettingDispCont = connect(
-  mapStateToProps
-)(SettingDisp)
+// const SettingDispCont = connect(
+//   mapStateToProps
+// )(SettingDisp)
 
-export default SettingDispCont;
+export default connect(mapStateToProps)(SettingDisp);

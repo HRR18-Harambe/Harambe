@@ -3,10 +3,12 @@ import Footer from './Footer';
 import AddTodo from '../containers/AddTodo';
 import VisibleTodoList from '../containers/VisibleTodoList';
 import Setting from '../containers/SettingContainer';
-import SettingDisp from './SettingDisp';
+import SettingDisp from '../containers/SettingsDispContainer.js';
+import RSSTicker from './RSSTicker';
 
 const App = () => (
   <div>
+    <RSSTicker />
     <AddTodo />
     <VisibleTodoList />
     <Setting />
@@ -15,4 +17,4 @@ const App = () => (
   </div>
 )
 
-export default App
+export default App;

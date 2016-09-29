@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import { createStore } from 'redux'
 
 class SettingDisp extends Component {
-
+  constructor(props){
+    super(props);
+  }
   render() {
     const { active } = this.props;
+    console.log(this.props);
     console.log(active, "active");
     if(active) {
      return (
@@ -13,7 +15,7 @@ class SettingDisp extends Component {
           </div>
           );
     }
-    return ( <div></div> )
+    return ( <div>empty</div> )
     }
   }
 
