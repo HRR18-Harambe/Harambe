@@ -14,7 +14,6 @@ const App = () => (
     <ButtonList />
     <MagicButton urls={['https://www.google.com', 'https://www.yahoo.com', 'https://www.bing.com']} />
     <Setting />
-    <h1>Welcome, User</h1>
     <SettingDisp />
   </div>
 );
