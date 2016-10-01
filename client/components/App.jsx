@@ -11,6 +11,7 @@ const App = () => (
     <SearchBar />
     <ButtonList />
     <Setting />
+    <h1>Welcome, User</h1>
     <SettingDisp />
   </div>
 );
