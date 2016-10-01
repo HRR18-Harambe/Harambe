@@ -1,6 +1,6 @@
-const rssFeed = (state = [{ id: 1, text: 'test feed right here' },
-{ id: 2, text: '22' },
-{ id: 3, text: '33' }], action) => {
+const rssFeed = (state = [{ key: 1, text: 'test feed right here' },
+{ key: 2, text: '22' },
+{ key: 3, text: '33' }], action) => {
   switch (action.type) {
     case 'READ_ALL_RSS':
       return state;
