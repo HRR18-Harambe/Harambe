@@ -10,7 +10,7 @@ RSSFeed.propTypes = {
   rssFeed: PropTypes.shape({
     id: PropTypes.number,
     text: PropTypes.string,
-    }).isRequired,
+  }).isRequired,
 };
 
 export default RSSFeed;
