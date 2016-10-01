@@ -10,7 +10,6 @@ class SettingDisp extends Component {
   }
 
   onInputChange(event) {
-    console.log('');
     this.setState({ buttonName: event.target.value });
   }
 
