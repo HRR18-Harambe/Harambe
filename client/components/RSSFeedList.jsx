@@ -15,6 +15,3 @@ RSSFeedList.propTypes = {
 };
 
 export default RSSFeedList;
-
-    // <RSSFeed rssFeed={rssFeed[0]} />
-    // <RSSFeed rssFeed={rssFeed[1]} />

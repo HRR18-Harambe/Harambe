@@ -11,9 +11,9 @@ export function toggleSettings() {
   };
 }
 
-export function addURL(URL, Button ) {
+export function addURL(URL, Button) {
   return {
     type: 'ADD_URL_CLICK',
     payload: [URL, Button],
-  }
+  };
 }

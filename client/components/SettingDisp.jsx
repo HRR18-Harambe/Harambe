@@ -6,7 +6,7 @@ class SettingDisp extends Component {
     super(props);
     this.state = { buttonName: '', URLName: '' };
     this.onInputChange = this.onInputChange.bind(this);
-    this.onURLInputChange = this.onURLInputChange.bind(this)
+    this.onURLInputChange = this.onURLInputChange.bind(this);
     this.onAddButtonClick = this.onAddButtonClick.bind(this);
     this.onAddURLClick = this.onAddURLClick.bind(this);
   }
@@ -16,7 +16,7 @@ class SettingDisp extends Component {
   }
 
   onURLInputChange(event) {
-    this.setState({ URLName: event.target.value})
+    this.setState({ URLName: event.target.value });
   }
 
   onAddButtonClick() {
@@ -45,16 +45,14 @@ class SettingDisp extends Component {
           <button onClick={this.onAddButtonClick}>Create button</button>
 
 
-
           Add a URL for this button to open:
           <input
-          type="text"
-          onChange={this.onURLInputChange}
-          value={this.state.URLName}
+            type="text"
+            onChange={this.onURLInputChange}
+            value={this.state.URLName}
           />
           <button onClick={this.onAddURLClick}>add URL to this button</button>
         </div>
-
 
 
       );

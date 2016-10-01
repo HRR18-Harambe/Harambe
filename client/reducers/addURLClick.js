@@ -4,7 +4,7 @@ const addURLClick = (state = false, action) => {
     case 'ADD_URL_CLICK':
       console.log('Reducer activated with payload: ', action.payload);
       return {
-        ...state
+        ...state,
       };
 
     default:
