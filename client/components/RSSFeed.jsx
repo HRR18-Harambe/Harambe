@@ -1,13 +1,16 @@
 import React, { PropTypes } from 'react';
 
 const RSSFeed = ({ rssFeed }) => (
-  <div>
-    {rssFeed}
-  </div>
+  <li key={rssFeed.id}>
+    {rssFeed.text}
+  </li>
 );
 
 RSSFeed.propTypes = {
-  rssFeed: PropTypes.string.isRequired,
+  rssFeed: PropTypes.shape({
+    id: PropTypes.number,
+    text: PropTypes.string,
+    }).isRequired,
 };
 
 export default RSSFeed;
