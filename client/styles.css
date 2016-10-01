@@ -1,5 +1,5 @@
 body {
-  margin: 1.5em;
+  margin: 1px 30px 30px 30px;
   background: #E8E8E8;
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial", "Lucida Grande", "sans-serif";
 }
@@ -53,14 +53,14 @@ body {
  height: 50px;
  overflow: hidden;
  position: relative;
- border: red dotted 1px;
+ /*border: red dotted 1px;*/
  z-index: 1000000;
 }
 .rssF1 {
  position: absolute;
  width: 100%;
  height: 100%;
- margin: 0;
+ margin: -20;
  line-height: 50px;
  text-align: left;
  /* Starting position */
