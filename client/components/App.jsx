@@ -9,6 +9,7 @@ const App = () => (
     <RSSHolder />
     <SearchBar />
     <Setting />
+    <h1>Welcome, User</h1>
     <SettingDisp />
   </div>
 );
