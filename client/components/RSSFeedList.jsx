@@ -16,6 +16,3 @@ RSSFeedList.propTypes = {
 };
 
 export default RSSFeedList;
-
-// rssFeed.map(feed =>
-//         <RSSFeed key={feed.key} rssFeed={feed} />)
