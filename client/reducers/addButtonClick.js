@@ -12,10 +12,8 @@ const addButtonClick = (state = {
   }
   switch (action.type) {
     case 'ADD_BUTTON_CLICK':
-      console.log('ADDBUTTON');
       return newState;
     case 'ADD_URL_CLICK':
-      console.log('ADDURL');
       return newState;
     case 'GET_STATE_FROM_SERVER':
       // console.log('GET_STATE_FROM_SERVER was called in addButtonClick reducer');
