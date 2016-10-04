@@ -26,7 +26,6 @@ class SearchBar extends Component {
       method: 'GET',
       cache: false,
       success: function (data) {
-        console.log(data);
         this.setState({ userName: data.user.firstName });
       }.bind(this),
     });

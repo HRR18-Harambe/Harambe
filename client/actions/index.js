@@ -43,7 +43,10 @@ export function updateStateFromServer() {
   return (dispatch) => {
     $.get('api/state')
     .then((res) => {
+<<<<<<< d72509c0e20026f90c37e85332b41f6d06b3c8f1
       console.log('UPDATEFROMSERVER', res);
+=======
+>>>>>>> took out some console logs because there were too many and it was confusing
       dispatch(gotState(res));
     })
     .catch((err) => {
