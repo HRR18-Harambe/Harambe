@@ -8,6 +8,11 @@ const RSSFeedList = ({ rssFeed }) => (
         rssFeed.map(feed => feed.text).join('  ')
       }
     </div>
+    <div className="rssF12">
+      {
+        rssFeed.map(feed => feed.text).join('  ')
+      }
+    </div>
   </div>
 );
 
