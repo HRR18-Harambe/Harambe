@@ -13,12 +13,14 @@ class WelcomeBar extends Component {
     const currentHour = this.state.currentTime.getHours();
     let greetingPhrase = '';
     const helloChance = Math.floor((Math.random() * 4));
-    if (currentHour <= 11) {
+    if (currentHour <= 11 && currentHour >= 4) {
       greetingPhrase = 'Good morning, ';
     } else if (currentHour >= 12 && currentHour < 18) {
       greetingPhrase = 'Good afternoon, ';
     } else if (currentHour >= 18) {
       greetingPhrase = 'Good evening, ';
+    } else {
+      greetingPhrase = 'Go back to bed, ';
     }
     if (helloChance === 0) greetingPhrase = 'Hello, ';
     return greetingPhrase;
