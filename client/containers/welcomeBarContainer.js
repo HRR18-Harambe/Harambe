@@ -5,5 +5,9 @@ const mapStateToProps = state => ({
   welcomeBarState: state.currentUser,
 });
 
+
 export default connect(mapStateToProps)(WelcomeBar);
+
+
+
 
