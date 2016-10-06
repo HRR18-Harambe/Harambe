@@ -2,9 +2,10 @@
 /* global $ */
 
 import React, { Component, PropTypes } from 'react';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import TextField from 'material-ui/TextField';
 import FlatButton from 'material-ui/FlatButton';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import WelcomeBarContainer from '../containers/welcomeBarContainer';
 
 class SearchBar extends Component {
   constructor(props) {
@@ -47,8 +48,11 @@ class SearchBar extends Component {
         <ReactCSSTransitionGroup
           transitionName="welcome"
           transitionAppear
-          transitionAppearTimeout={2500}>
-          <div>Hello, {this.state.userName}</div>
+          transitionAppearTimeout={2500}
+          transitionEnterTimeout={2500}
+          transitionLeaveTimeout={2500}
+        >
+          <WelcomeBarContainer />
         </ReactCSSTransitionGroup>
         <form className="input-group" onSubmit={this.onFormSubmit}>
           <TextField
