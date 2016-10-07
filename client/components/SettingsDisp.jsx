@@ -155,11 +155,11 @@ class SettingsDisp extends Component {
           </div>
           <div>
             <h5>select up to two RSS feeds</h5>
-            <RaisedButton onTouchTap={() => { this.onRssFeedSelection('news'); }}>news</RaisedButton>
-            <RaisedButton onTouchTap={() => { this.onRssFeedSelection('tech'); }}>tech</RaisedButton>
-            <RaisedButton onTouchTap={() => { this.onRssFeedSelection('sports'); }}>sports</RaisedButton>
-            <RaisedButton onTouchTap={() => { this.onRssFeedSelection('finance'); }}>finance</RaisedButton>
-            <RaisedButton onTouchTap={() => { this.onRssFeedSelection('stocks'); }}>stocks</RaisedButton>
+            <RaisedButton onClick={() => { this.props.selectRSSfeed('news'); }}>news</RaisedButton>
+            <RaisedButton onClick={() => { this.props.selectRSSfeed('US stocks'); }}>US stocks</RaisedButton>
+            <RaisedButton onClick={() => { this.props.selectRSSfeed('tech news'); }}>tech news</RaisedButton>
+            <RaisedButton onClick={() => { this.props.selectRSSfeed('finance news'); }}>finance news</RaisedButton>
+            <RaisedButton onClick={() => { this.props.selectRSSfeed('sports'); }}>sports</RaisedButton>
           </div>
           <div>
             <h5>current selection:</h5>
