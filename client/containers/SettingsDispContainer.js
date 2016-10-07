@@ -16,6 +16,10 @@ const mapDispatchToProps = dispatch => ({
     dispatch(deleteButton(buttonToDelete));
   },
 
+  selectRSSfeed: (selection) => {
+    console.log(selection)
+  },
+
 });
 
 const mapStateToProps = state => ({

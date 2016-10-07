@@ -147,6 +147,19 @@ class SettingsDisp extends Component {
             />
             <RaisedButton primary onClick={this.onDeleteButtonClick}>delete</RaisedButton>
           </div>
+          <div>
+            <h5>select up to two RSS feeds</h5>
+            <RaisedButton onClick = {() => { this.props.selectRSSfeed("news") }}>news</RaisedButton>
+            <RaisedButton onClick = {() => { this.props.selectRSSfeed("US stocks") }}>US stocks</RaisedButton>
+            <RaisedButton onClick = {() => { this.props.selectRSSfeed("tech news") }}>tech news</RaisedButton>
+            <RaisedButton onClick = {() => { this.props.selectRSSfeed("finance news") }}>finance news</RaisedButton>
+            <RaisedButton onClick = {() => { this.props.selectRSSfeed("sports") }}>sports</RaisedButton>
+          </div>
+          <div>
+            <h5>confirm RSS feed selections</h5>
+            <RaisedButton>submit</RaisedButton>
+          </div>
+
         </Dialog>
       </div>
     );
