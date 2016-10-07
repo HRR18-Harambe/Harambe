@@ -12,14 +12,6 @@ const mapDispatchToProps = dispatch => ({
     dispatch(addURL(URLName, buttonName));
   },
 
-  interestNameClick: (interestName) => {
-    dispatch(addInterest(interestName));
-  },
-
-  RSSFeedURLClick: (RSSFeedURL, interestName) => {
-    dispatch(addRSSFeedToInterest(RSSFeedURL, interestName));
-  },
-
   deleteButtonClick: (buttonToDelete) => {
     dispatch(deleteButton(buttonToDelete));
   },
