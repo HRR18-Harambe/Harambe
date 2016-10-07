@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import SettingsDisp from '../components/SettingsDisp.jsx';
-import { addButton, addURL, addInterest, addRSSFeedToInterest, deleteButton } from '../actions/index';
+import { addButton, addURL, deleteButton } from '../actions/index';
 
 const mapDispatchToProps = dispatch => ({
 
