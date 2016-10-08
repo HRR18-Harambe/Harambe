@@ -1,7 +1,7 @@
 const rssFeed = (state = {
   sports: [],
   tech: [],
-  sports: [],
+  news: [],
   finance: [],
 }, action) => {
   switch (action.type) {

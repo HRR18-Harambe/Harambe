@@ -1,17 +1,18 @@
 import React, { PropTypes } from 'react';
 // import RSSFeed from './RSSFeed.jsx';
 
-const RSSFeedList = ({ rssFeed, chosenRssFeeds }) => (
+const RSSFeedList = ({ rssFeed, chosenRssFeed1, chosenRssFeed2 }) => (
   <div className="RSSFeedList">
     <div
       className="marquee marquee-speed-slow" data-marquee={
-        JSON.stringify(chosenRssFeeds)
-        // rssFeed[chosenRssFeeds[0]].map(feed => feed).join(' * ')
+        rssFeed
+        //rssFeed.chosenRssFeed1.map(feed => feed).join(' * ')
+        // .map(feed => feed).join(' * ')
       }
     /><div
       className="marquee" data-marquee={
-        JSON.stringify(chosenRssFeeds)
-        // rssFeed[chosenRssFeeds[1]].map(feed => feed).join(' * ')
+        rssFeed
+        // .map(feed => feed).join(' * ')
       }
     /></div>
 );
