@@ -1,4 +1,4 @@
-const RSSFeedList = (state = ["news", "sports"], action) => {
+const RSSFeedList = (state = ['news', 'sports'], action) => {
   switch (action.type) {
 
     case 'ADD_RSS_SELECTION':
