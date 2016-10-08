@@ -5,11 +5,11 @@ const RSSFeedList = ({ rssFeed }) => (
   <div className="RSSFeedList">
     <div
       className="marquee marquee-speed-slow" data-marquee={
-        rssFeed.first.map(feed => feed.text).join(' * ')
+        rssFeed.news.map(feed => feed).join(' * ')
       }
     /><div
       className="marquee" data-marquee={
-        rssFeed.second.map(feed => feed.text).join(' * ')
+        rssFeed.tech.map(feed => feed).join(' * ')
       }
     /></div>
 );
