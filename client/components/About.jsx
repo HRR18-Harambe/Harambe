@@ -8,8 +8,8 @@ import InfoIcon from 'material-ui/svg-icons/action/info-outline';
 // import StarBorder from 'material-ui/svg-icons/toggle/star-border';
 
 const customContentStyle = {
-  width: '100%',
-  maxWidth: 'none',
+  width: '80%',
+  maxWidth: '1024px',
 };
 
 const styles = {
@@ -50,7 +50,7 @@ const tilesData = [
 ];
 
 /**
- The dialog width has been set to occupy the full width of browser
+ The dialog width has been set to occupy the 80% width of browser
  through the `contentStyle` property. */
 export default class DialogExampleCustomWidth extends React.Component {
   state = {
