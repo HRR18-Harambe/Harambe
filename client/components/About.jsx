@@ -8,9 +8,8 @@ import IconButton from 'material-ui/IconButton';
 import InfoIcon from 'material-ui/svg-icons/action/info-outline';
 // import StarBorder from 'material-ui/svg-icons/toggle/star-border';
 
-const customContentStyle = {
-  width: '80%',
-  maxWidth: '1024px',
+const inkBarStyle = {
+  backgroundColor: 'blue',
 };
 
 const styles = {
@@ -89,7 +88,7 @@ export default class DialogExampleCustomWidth extends React.Component {
           open={this.state.open}
           autoScrollBodyContent
         >
-          <Tabs>
+          <Tabs inkBarStyle={inkBarStyle}>
             <Tab label="about swick">
               <div>
                 <div className="aboutP">
