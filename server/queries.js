@@ -22,7 +22,7 @@ module.exports = {
 
   financeBodyUpi: "https://query.yahooapis.com/v1/public/yql?q=select%20channel.item.description%20from%20xml%20where%20url%20%3D%20'http%3A%2F%2Frss.upi.com%2Fnews%2Fbusiness_news.rss'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys",
 
-  // Reuters seems to have the best/longest descriptions included in their RSS feeds, so focus for content is from reuters.
+  // Reuters seems to have the best/longest descriptions included in their RSS feeds
   reutersHotStocks: "https://query.yahooapis.com/v1/public/yql?q=select%20channel.item.description%20from%20xml%20where%20url%20%3D%20'http%3A%2F%2Ffeeds.reuters.com%2Freuters%2FhotStocksNews'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys",
 
   reutersWealth: "https://query.yahooapis.com/v1/public/yql?q=select%20channel.item.description%20from%20xml%20where%20url%20%3D%20'http%3A%2F%2Ffeeds.reuters.com%2Fnews%2Fwealth'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys",
@@ -39,17 +39,17 @@ module.exports = {
 
   reutersGlobalMarkets: "https://query.yahooapis.com/v1/public/yql?q=select%20channel.item.description%20from%20xml%20where%20url%20%3D%20'http%3A%2F%2Ffeeds.reuters.com%2Freuters%2FglobalmarketsNews'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys",
 
-  reutersHedgefunds: "",
+  reutersHedgefunds: "https://query.yahooapis.com/v1/public/yql?q=select%20channel.item.description%20from%20xml%20where%20url%20%3D%20'http%3A%2F%2Ffeeds.reuters.com%2Fnews%2Fhedgefunds'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys",
 
-  reutersIPOs: "",
+  reutersIPOs: "https://query.yahooapis.com/v1/public/yql?q=select%20channel.item.description%20from%20xml%20where%20url%20%3D%20'http%3A%2F%2Fwww.reuters.com%2FrssFeed%2FnewIssuesNews'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys",
 
-  reutersMergersAcquisitions: "",
+  reutersMergersAcquisitions: "https://query.yahooapis.com/v1/public/yql?q=select%20channel.item.description%20from%20xml%20where%20url%20%3D%20'http%3A%2F%2Ffeeds.reuters.com%2Freuters%2FmergersNews'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys",
 
-  reutersRegulatory: "",
+  reutersRegulatory: "https://query.yahooapis.com/v1/public/yql?q=select%20channel.item.description%20from%20xml%20where%20url%20%3D%20'http%3A%2F%2Ffeeds.reuters.com%2Freuters%2FgovernmentfilingsNews'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys",
 
-  reutersSummit: "",
+  reutersSummit: "https://query.yahooapis.com/v1/public/yql?q=select%20channel.item.description%20from%20xml%20where%20url%20%3D%20'http%3A%2F%2Ffeeds.reuters.com%2Freuters%2FsummitNews'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys",
 
-  reutersUSDollar: "",
+  reutersUSDollar: "https://query.yahooapis.com/v1/public/yql?q=select%20channel.item.description%20from%20xml%20where%20url%20%3D%20'http%3A%2F%2Ffeeds.reuters.com%2Freuters%2FUSdollarreportNews'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys",
 
-  reutersUSMarkets: "",
+  reutersUSMarkets: "https://query.yahooapis.com/v1/public/yql?q=select%20channel.item.description%20from%20xml%20where%20url%20%3D%20'http%3A%2F%2Ffeeds.reuters.com%2Fnews%2Fusmarkets'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys",
 };
