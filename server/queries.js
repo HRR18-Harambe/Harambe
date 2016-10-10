@@ -18,9 +18,12 @@ module.exports = {
   sportsReuters: "https://query.yahooapis.com/v1/public/yql?q=select%20channel.item.title%20from%20xml%20where%20url%20%3D%20'http%3A%2F%2Ffeeds.reuters.com%2Freuters%2FsportsNews%3Fformat%3Dxml'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys",
 
   // Queries for text body
-  financeBodyMW: "https://query.yahooapis.com/v1/public/yql?q=select%20channel.item.description%20from%20xml%20where%20url%20%3D%20'http%3A%2F%2Ffeeds.marketwatch.com%2Fmarketwatch%2Ftopstories%2F'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys",
 
   financeBodyUpi: "https://query.yahooapis.com/v1/public/yql?q=select%20channel.item.description%20from%20xml%20where%20url%20%3D%20'http%3A%2F%2Frss.upi.com%2Fnews%2Fbusiness_news.rss'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys",
+
+  mwTopStories: "https://query.yahooapis.com/v1/public/yql?q=select%20channel.item.description%20from%20xml%20where%20url%20%3D%20'http%3A%2F%2Ffeeds.marketwatch.com%2Fmarketwatch%2Ftopstories%2F'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys",
+
+  mwCommentary: "https://query.yahooapis.com/v1/public/yql?q=select%20channel.item.description%20from%20xml%20where%20url%20%3D%20'http%3A%2F%2Ffeeds.marketwatch.com%2Fmarketwatch%2Fcommentary%2F'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys",
 
   // Reuters seems to have the best/longest descriptions included in their RSS feeds
   reutersHotStocks: "https://query.yahooapis.com/v1/public/yql?q=select%20channel.item.description%20from%20xml%20where%20url%20%3D%20'http%3A%2F%2Ffeeds.reuters.com%2Freuters%2FhotStocksNews'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys",
