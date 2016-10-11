@@ -30,9 +30,11 @@ let sportsUpdateCount = 0;
 
 // function to serve tasty info to Watson
 let finNews = [];
+let watsonFin = [];
 
 const popFinNews = () => {
   finNews = [];
+  watsonFin = [];
   Promise.all([
     queries.financeBodyUpi,
     queries.mwTopStories,
@@ -65,47 +67,15 @@ const popFinNews = () => {
         ...feed9, ...feed10, ...feed11, ...feed12, ...feed13,
         ...feed14, ...feed15, ...feed16, ...feed17, ...feed18]
         .map(element => element.channel.item.description)));
-      console.log('NEWS', finNews);
+      // console.log('NEWS', finNews);
+    })
+    .then(() => {
+      finNews.map((element) => {
+        watsonFin.push(element.substring(0, element.indexOf('<')));
+      });
+      console.log('CLEANED', watsonFin.join('. '));
     });
 };
-
-// const popFinNews = () => {
-//   FinNews = [];
-//   requestify.get(queries.financeBodyUpi)
-//   .then((upi) => {
-//     let desc = JSON.parse(upi.body).query.results.rss;
-//     let alternate = true;
-//     desc.forEach((element) => {
-//       if (alternate) {
-//         finNews.push(element.channel.item.description);
-//         alternate = false;
-//       } else {
-//         alternate = true;
-//       }
-//     });
-//     return requestify.get(queries.mwTopStories).then((mwTS) => {
-//       desc = JSON.parse(mwTS.body).query.results.rss;
-//       desc.forEach((element) => {
-//         finNews.push(element.channel.item.description);
-//       });
-//       return requestify.get(queries.mwCommentary).then((mwC) => {
-//         desc = JSON.parse(mwC.body).query.results.rss;
-//         desc.forEach((element) => {
-//           finNews.push(element.channel.item.description);
-//         });
-//         // console.log('Updated finance');
-//         // financeUpdateCount = 0;
-//       });
-//     });
-//   })
-//   .then(() => {
-//     requestify.get(queries.financeBodyUpi).then((upi) => {
-//       desc = JSON.parse(mwTS.body).query.results.rss;
-//       desc.forEach((element) => {
-//       finNews.push(element.channel.item.description);
-//     })
-//   })
-// };
 
 // Update functions for rss feeds
 const updateFinance = () => {
