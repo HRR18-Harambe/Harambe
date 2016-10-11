@@ -37,9 +37,7 @@ const App = () => (
       </div>
 
       <Paper className="bottomNav" zDepth={1}>
-        <div className="Sentiment">
-          <Senti />
-        </div>
+        <Senti />
         <SettingsDispContainer />
         <About />
         <ThemeButton />

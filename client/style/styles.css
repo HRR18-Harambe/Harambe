@@ -200,13 +200,40 @@ body {
   position:absolute;
   bottom:0;
   width:100%;
-  height:65px;   /* Height of the footer */
+  height:70px;   /* Height of the footer */
 }
 
 /* WATSON SENTIMENT/EMOTION GRAPHIC */
 
 .Sentiment {
+  display: inline-flex;
+  width: 100%;
+  height: 5px;
+}
 
+.emoAnger {
+  display: inline;
+  background-color: red;
+}
+
+.emoDisgust {
+  display: inline;
+  background-color: purple;
+}
+
+.emoFear {
+  display: inline;
+  background-color: green;
+}
+
+.emoJoy {
+  display: inline;
+  background-color: yellow;
+}
+
+.emoSadness {
+  display: inline;
+  background-color: blue;
 }
 
 /* SETTINGS/SETTINGS DISPLAY */
