@@ -59,4 +59,8 @@ module.exports = {
   reutersUSDollar: "https://query.yahooapis.com/v1/public/yql?q=select%20channel.item.description%20from%20xml%20where%20url%20%3D%20'http%3A%2F%2Ffeeds.reuters.com%2Freuters%2FUSdollarreportNews'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys",
 
   reutersUSMarkets: "https://query.yahooapis.com/v1/public/yql?q=select%20channel.item.description%20from%20xml%20where%20url%20%3D%20'http%3A%2F%2Ffeeds.reuters.com%2Fnews%2Fusmarkets'&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys",
+
+  // Some more feeds for watson to eat
+
+
 };

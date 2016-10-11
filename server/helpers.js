@@ -268,6 +268,13 @@ module.exports = {
             lastName: foundUser.lastName,
             userName: foundUser.userName,
           },
+          docEmotions: {
+            anger: 0.57912,
+            disgust: 0.085289,
+            fear: 0.007593,
+            joy: 0.312947,
+            sadness: 0.015051,
+          },
         };
 
         db.Button.findAll({ where: { UserId: foundUser.id } })
