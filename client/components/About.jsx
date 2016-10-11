@@ -175,7 +175,7 @@ export default class DialogExampleCustomWidth extends React.Component {
                     We also use IBM Watson to analyze financial and global news to find interesting insights using machine learning/neural networks, and present them to the user in a helpful and unobtrusive way. This is where a lot of work happens to improve value and accuracy.
                   </p>
                   <p>
-                    Have any ideas for new features? Submit a pull request <a href="https://github.com/HRR18-Harambe/Harambe">here.</a>
+                    Have any ideas for new features? Contact us, or submit a pull request <a href="https://github.com/HRR18-Harambe/swick">here.</a>
                   </p>
                 </div>
               </div>
