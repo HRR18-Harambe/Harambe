@@ -35,9 +35,11 @@ const App = () => (
           <ButtonListContainer />
         </div>
       </div>
-
       <Paper className="bottomNav" zDepth={1}>
-        <Senti />
+        <div className="watsonInfo">
+          <Senti />
+          <span>Says some shit</span>
+        </div>
         <SettingsDispContainer />
         <About />
         <ThemeButton />
