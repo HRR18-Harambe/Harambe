@@ -23,6 +23,7 @@ class WelcomeBar extends Component {
   }
 
 // dynamic greeting functions
+// need to be moved to back-end
   getLocation() {
     if (navigator.geolocation) {
       navigator.geolocation.getCurrentPosition((position) => {
