@@ -13,11 +13,13 @@
 1. [Requirements](#requirements)
 1. [Development](#development)
     1. [Installing Dependencies](#installing-dependencies)
+    1. [Starting/Testing](#starting/testing)
     1. [Tasks](#tasks)
     1. [Deployed](#deployed)
 1. [Team](#team)
 1. [Contributing](#contributing)
 1. [Other](#other)
+
 ## Usage
 
 Swick is an app that can help you get to the content you need on the internet much faster.
@@ -54,9 +56,24 @@ OPENWEATHER_APIKEY=
 
 ### Installing Dependencies
 
+To install all the node dependencies
+
 ```
 npm install
 ```
+
+### Starting/Testing
+
+To start the node server
+```
+npm start
+```
+
+To run the linter and tests
+```
+npm test
+```
+
 
 ### Tasks
 
