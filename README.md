@@ -90,5 +90,5 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 
 ## Other
 
-Style guide for this project is from airbnb, see [STYLE-GUIDE.md](STYLE-GUIDE.md)
+The style guide for this project is from airbnb, see [STYLE-GUIDE.md](STYLE-GUIDE.md)
 
